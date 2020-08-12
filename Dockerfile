@@ -14,7 +14,6 @@ RUN wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_$
 RUN rm -rf /var/cache/apk/*
 
 RUN mkdir /conf
-VOLUME /conf
 
 WORKDIR /frps
 ENTRYPOINT ["./frps","-c","/conf/frps.ini"]
