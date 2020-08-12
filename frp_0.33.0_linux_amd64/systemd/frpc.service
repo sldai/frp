@@ -7,8 +7,8 @@ Type=simple
 User=nobody
 Restart=on-failure
 RestartSec=5s
-ExecStart=/usr/bin/frpc -c /etc/frp/frpc.ini
-ExecReload=/usr/bin/frpc reload -c /etc/frp/frpc.ini
+ExecStart=/home/heinrich/frp/frp_0.33.0_linux_amd64/frpc -c /home/heinrich/frp/conf/frpc.ini
+ExecReload=/home/heinrich/frp/frp_0.33.0_linux_amd64/frpc reload -c /home/heinrich/frp/conf/frpc.ini
 
 [Install]
 WantedBy=multi-user.target
