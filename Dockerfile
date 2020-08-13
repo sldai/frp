@@ -17,5 +17,5 @@ RUN mkdir /conf
 
 ENV TYPE=frps
 
-WORKDIR /frps
-ENTRYPOINT ["./${TYPE}","-c","/conf/${TYPE}.ini"]
+WORKDIR /frp
+CMD ./${TYPE} -c /conf/${TYPE}.ini
