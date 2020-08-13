@@ -2,6 +2,8 @@ Access the host after behind LAN (cannot be connected with a public ip). Thanks 
 
 ![flow](flow.png)
 
+Make a conf folder including frps.ini and frpc.ini. See [fatedier](https://github.com/fatedier/frp) for more detail.
+
 frps:
 
 ```
