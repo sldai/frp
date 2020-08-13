@@ -13,7 +13,7 @@ RUN wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_$
 # Clean APK cache
 RUN rm -rf /var/cache/apk/*
 
-COPY /conf/frps.ini /frps/
+COPY conf/frps.ini /frps/
 
 WORKDIR /frps
 ENTRYPOINT ["./frps","-c","frps.ini"]
